@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Style Jumping Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="game-ui">
+            <div id="lives">Lives: 3</div>
+            <div id="level">Level: 1</div>
+        </div>
+        <div id="gameOver" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <button id="restartButton">Play Again</button>
+        </div>
+        <div id="levelComplete" class="hidden">
+            <h2>Good Job!</h2>
+            <button id="nextLevelButton">Start Next Level</button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="tetris.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 

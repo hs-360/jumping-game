@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1a1a;
+    font-family: "Press Start 2P", system-ui, -apple-system, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+#gameCanvas {
+    display: block;
+    background: #000;
+    border-radius: 10px;
+}
+
+.game-ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    text-shadow: 2px 2px #0ff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gameOver, #levelComplete {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #0ff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+#gameOver.hidden, #levelComplete.hidden {
+    display: none;
+}
+
+#restartButton, #nextLevelButton {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Press Start 2P", system-ui, -apple-system, sans-serif;
+    transition: all 0.3s ease;
+}
+
+#restartButton:hover, #nextLevelButton:hover {
+    background: #357abd;
+    transform: scale(1.05);
+} 
